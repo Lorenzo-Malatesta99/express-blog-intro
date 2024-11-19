@@ -5,7 +5,7 @@ const port = 3000;
 
 const posts = require("./posts");
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "img")));
 
 app.get("/", (req, res) => {
   res.send("Server del mio blog");
